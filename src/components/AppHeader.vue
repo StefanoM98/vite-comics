@@ -77,7 +77,7 @@ export default {
 
 <style scoped lang="scss">
     header {
-        width: 80%;
+        width: 70%;
         margin: 0 auto;
         padding: 1rem 0;
         display: flex;

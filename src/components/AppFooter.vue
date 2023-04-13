@@ -192,8 +192,9 @@ footer {
     height: 500px;
     background-image: url(../assets/img/footer-bg.jpg);
     background-position: center;
+    object-fit: contain;
     .top {
-        width: 80%;
+        width: 70%;
         height: 100%;
         margin: 0 auto;
         display: flex;
@@ -248,7 +249,7 @@ footer {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            width: 80%;
+            width: 70%;
             margin: 0 auto;
             .sign-up {
                 a {
@@ -260,6 +261,10 @@ footer {
                 }
             }
             .links {
+                h3 {
+                    color: #0082F9;
+                    padding: 0 7px;
+                }
                 display: flex;
                 align-items: center;
                 ul{

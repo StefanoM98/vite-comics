@@ -68,7 +68,7 @@ export default {
     .content {
      display: flex;
      align-items: center;
-     width: 80%;
+     width: 70%;
      height: 100px;
      margin: 0 auto;
      color: white;
@@ -80,7 +80,7 @@ export default {
     position: relative;
     z-index: 998;
     .cta {
-        width: 80%;
+        width: 70%;
         margin: 0 auto;
         ul {
             display: flex;
