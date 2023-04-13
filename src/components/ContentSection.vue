@@ -77,6 +77,8 @@ export default {
 .bottom {
     background-color: #0082F9;
     padding: 2rem;
+    position: relative;
+    z-index: 998;
     .cta {
         width: 80%;
         margin: 0 auto;
