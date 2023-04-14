@@ -67,7 +67,7 @@ export default {
         </section>
         <section class="right">
             <ul class="navigation">
-                <li v-for="link in links" :class="link.active ? 'active': ''">
+                <li v-for="(link, index) in links" :key="index" :class="link.active ? 'active': ''">
                     <a :href="link.url">{{ link.text }}</a>
                 </li>
             </ul>
@@ -103,6 +103,9 @@ export default {
                 &:hover{
                     color: #0082F9;
                 }
+            }
+            li:hover {
+                border-bottom: 2px solid #0082F9;
             }
         }
     }

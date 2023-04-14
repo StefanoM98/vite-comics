@@ -154,7 +154,7 @@ export default {
                 <div v-for="(elem, index) in links" class="card">
                     <h2>{{ index }}</h2>
                     <ul>
-                        <li v-for="link in elem">
+                        <li v-for="(link, index) in elem" :key="index">
                             <a :href="link.url">
                                 {{ link.name }}
                             </a>
@@ -189,14 +189,11 @@ export default {
 
 <style scoped lang="scss">
 footer {
-    height: 500px;
     background-image: url(../assets/img/footer-bg.jpg);
     background-position: center;
-    // background-repeat: no-repeat;
     object-fit: contain;
     .top {
         width: 70%;
-        height: 100%;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
@@ -210,6 +207,7 @@ footer {
             .card {
                 width: calc(100% / 3);
                 height: 55%;
+                margin: 10px 0;
                 h2 {
                     padding: 0.4rem 0;
                 }
@@ -221,11 +219,12 @@ footer {
                     }
                     a {
                         text-decoration: none;
-                        color: inherit;
-                        font-size: 0.8rem;
+                        color: grey;
+                        font-size: 0.9rem;
                     }
                     a:hover {
                         text-decoration: underline;
+                        text-decoration-color: white;
                     }
                 }
             }
