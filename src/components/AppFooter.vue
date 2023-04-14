@@ -192,6 +192,7 @@ footer {
     height: 500px;
     background-image: url(../assets/img/footer-bg.jpg);
     background-position: center;
+    // background-repeat: no-repeat;
     object-fit: contain;
     .top {
         width: 70%;
@@ -222,6 +223,9 @@ footer {
                         text-decoration: none;
                         color: inherit;
                         font-size: 0.8rem;
+                    }
+                    a:hover {
+                        text-decoration: underline;
                     }
                 }
             }
